@@ -1,19 +1,12 @@
 # AA.MAGAJI Electronics & Solar
 
-Responsive navy-and-gold storefront with product filters, a browser-saved shopping cart, stock photography, and two showroom videos.
+Static HTML/CSS/JavaScript storefront. Video files are intentionally excluded. The video player uses externally hosted URLs.
 
-## Run locally
+Run `python -m http.server 8000` from this folder and open http://localhost:8000. No install or build is required. Publish the repository root on any static host.
 
-From this repository run `python -m http.server 8000`, then open http://localhost:8000.
+Edit products in app.js, page content in index.html, and styles in style.css. Cart selections are stored in the visitor browser; checkout prepares a copyable order request. Prices, WhatsApp contact, online payments and an admin backend are not configured.
 
-## Deploy
+See PHOTO-CREDITS.md for stock image sources.
 
-Static website: no dependencies or build step. Publish the repository root. On Vercel, choose Other with no build command and the root output directory.
-
-## Content
-
-Edit the product catalogue in `app.js`, page content in `index.html`, and styling in `style.css`. Media is in `assets/`. Stock photo sources are recorded in `PHOTO-CREDITS.md`.
-
-## Current scope
-
-This is the HTML/CSS/JavaScript version. Cart selections persist on the visitor’s device. Checkout prepares a copyable order request; the business WhatsApp number, confirmed prices, online payments, product database, and admin login are not configured.
+## External videos
+Edit video-config.js and paste direct HTTPS video file URLs into new and original. Use publicly accessible media links (not a YouTube or Google Drive viewing-page link). Until configured, the showroom displays a photograph.
